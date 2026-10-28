@@ -8,7 +8,7 @@ window.SEVENHOST_CONFIG = {
   brand: "SevenHost",
 
   // EDIT: the inbox that receives waitlist and contact messages while there is no backend.
-  contactEmail: "hello@example.com",
+  contactEmail: "seveninkdigitaldevelopers@gmail.com",
 
   // EDIT (optional): WhatsApp number in international format, digits only, e.g. "919876543210". Leave "" to hide.
   whatsapp: "",
