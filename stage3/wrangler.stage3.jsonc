@@ -1,0 +1,23 @@
+{
+  // Stage 3 config. To use: replace the root wrangler.jsonc with this file's content (keep the name "wrangler.jsonc"),
+  // create a D1 database in the Cloudflare dashboard, paste its ID below, and move stage3/worker.js to src/worker.js.
+  // Do NOT commit real IDs if you ever make the repo public and consider them private; the database_id itself is not a secret
+  // but never commit API tokens.
+  "name": "sevenhost",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    // Only /api/* runs the Worker. Static files stay on the free, unlimited static path.
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "sevenhost-db",
+      "database_id": "PASTE-YOUR-D1-DATABASE-ID-HERE"
+    }
+  ]
+}
