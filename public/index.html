@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SevenHost — Honest, affordable web hosting (pre-launch)</title>
+  <meta name="description" content="SevenHost is building affordable web hosting in public, in stages. Join the waitlist, check a domain name, and see what is live today and what is still planned.">
+  <meta name="theme-color" content="#0b1020">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1020'/%3E%3Cpath d='M16 18h32L28 48' fill='none' stroke='%23ffb020' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="banner" role="status" id="status-banner">
+    <strong>Pre-launch.</strong> No paid hosting is on sale yet. You can join the waitlist — no payment is taken on this site.
+  </div>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="/" aria-label="SevenHost home">
+        <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#ffb020"/><path d="M16 18h32L28 48" fill="none" stroke="#0b1020" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>SevenHost</span>
+      </a>
+      <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" class="nav" aria-label="Main">
+        <a href="#roadmap">Roadmap</a>
+        <a href="#plans">Plans</a>
+        <a href="#domains">Domains</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a class="btn small" href="#waitlist">Join waitlist</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Built in public · Launching in stages</p>
+        <h1>Small-budget hosting that tells you the truth.</h1>
+        <p class="lead">SevenHost starts with static websites, then grows into real hosting only when the servers, backups and support are actually ready. No “unlimited” claims. No payments for services that do not exist yet.</p>
+        <div class="cta-row">
+          <a class="btn" href="#waitlist">Join the waitlist</a>
+          <a class="btn ghost" href="#roadmap">See what is live</a>
+        </div>
+        <ul class="trust">
+          <li>Honest limits</li>
+          <li>You own your data</li>
+          <li>HTTPS by default</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="roadmap" class="section">
+      <div class="wrap">
+        <h2>Roadmap: what is live and what is not</h2>
+        <p class="sub">A demo is not a hosting service. This table shows the difference.</p>
+        <ol class="stages">
+          <li class="stage live"><span class="pill">Live</span><h3>Stage 1 · This website</h3><p>The SevenHost site itself, served from a global CDN.</p></li>
+          <li class="stage next"><span class="pill">Next</span><h3>Stage 2 · Static site setup</h3><p>We deploy your static site to your own free account and hand it over.</p></li>
+          <li class="stage"><span class="pill">Planned</span><h3>Stage 3 · Forms &amp; database</h3><p>Waitlist and contact messages stored in a small database.</p></li>
+          <li class="stage"><span class="pill">Planned</span><h3>Stage 4 · Domains</h3><p>Domain search and registration through an authorised registrar or reseller programme.</p></li>
+          <li class="stage"><span class="pill">Planned</span><h3>Stage 5 · Real hosting</h3><p>A paid server, control panel, backups, monitoring and support. Sales start only after testing.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="plans" class="section alt">
+      <div class="wrap">
+        <h2>Planned plans</h2>
+        <p class="sub">Prices and limits below are <strong>targets, not live offers</strong>. They are published so you can tell us what you need.</p>
+        <div id="plan-grid" class="plans" aria-live="polite"></div>
+        <p class="fine">Nothing here is unlimited. Real limits are published before any plan goes on sale.</p>
+      </div>
+    </section>
+
+    <section id="domains" class="section">
+      <div class="wrap narrow">
+        <h2>Check a domain name</h2>
+        <p class="sub">This looks up the public registration record. It does <strong>not</strong> confirm you can buy the name — always confirm at a registrar. SevenHost does not sell domains yet.</p>
+        <form id="domain-form" class="inline-form" novalidate>
+          <label class="sr" for="domain-input">Domain name</label>
+          <input id="domain-input" name="domain" type="text" inputmode="url" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="example.com" required>
+          <button class="btn" type="submit">Check</button>
+        </form>
+        <p id="domain-result" class="result" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="faq" class="section alt">
+      <div class="wrap narrow">
+        <h2>Frequently asked questions</h2>
+        <details><summary>Can I buy hosting today?</summary><p>Not yet. Real hosting needs a paid server that we have not launched. We will not take money for something that is not running.</p></details>
+        <details><summary>What is “Static Site Setup”?</summary><p>For websites made of HTML, CSS and JavaScript. We help you deploy it to your own free Cloudflare account, so the account and the site belong to you.</p></details>
+        <details><summary>Will you host my WordPress or PHP site for free?</summary><p>No. Free static hosting cannot run PHP or WordPress. Those need a real server, which is a later stage.</p></details>
+        <details><summary>Why are limits not “unlimited”?</summary><p>Every server has limits. We will publish real numbers and enforce them fairly instead of hiding them in fine print.</p></details>
+        <details><summary>Do you register domains?</summary><p>Not yet. When we do, it will be through an authorised registrar or reseller programme, and prices will be shown before checkout.</p></details>
+        <details><summary>What happens to the details I submit?</summary><p>Only what you type into the waitlist or contact form, used to reply to you about SevenHost. Please never send passwords, card numbers or secrets through any form here.</p></details>
+        <details><summary>Is there a service guarantee?</summary><p>No guarantee while we are pre-launch. Any uptime promise will be written down only after monitoring proves we can keep it.</p></details>
+      </div>
+    </section>
+
+    <section id="waitlist" class="section">
+      <div class="wrap narrow">
+        <h2>Join the waitlist</h2>
+        <p class="sub">Tell us what you want hosted. This is not an account and no password is needed.</p>
+        <form id="waitlist-form" class="form" novalidate>
+          <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+          <label for="wl-name">Name</label>
+          <input id="wl-name" name="name" type="text" autocomplete="name" maxlength="80" required>
+          <label for="wl-email">Email</label>
+          <input id="wl-email" name="email" type="email" autocomplete="email" maxlength="120" required>
+          <label for="wl-interest">I am interested in</label>
+          <select id="wl-interest" name="interest"></select>
+          <label class="check"><input type="checkbox" name="consent" required> <span>I agree that SevenHost may contact me about its launch. I will not send passwords or payment details.</span></label>
+          <button class="btn" type="submit">Join the waitlist</button>
+          <p id="waitlist-msg" class="result" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="wrap narrow">
+        <h2>Contact</h2>
+        <p class="sub">Questions about plans, limits or your site? Send a message.</p>
+        <form id="contact-form" class="form" novalidate>
+          <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+          <label for="ct-name">Name</label>
+          <input id="ct-name" name="name" type="text" autocomplete="name" maxlength="80" required>
+          <label for="ct-email">Email</label>
+          <input id="ct-email" name="email" type="email" autocomplete="email" maxlength="120" required>
+          <label for="ct-msg">Message</label>
+          <textarea id="ct-msg" name="message" rows="5" maxlength="1500" required></textarea>
+          <button class="btn" type="submit">Send message</button>
+          <p id="contact-msg" class="result" role="status" aria-live="polite"></p>
+        </form>
+        <p id="wa-line" class="fine" hidden></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <p><strong>SevenHost</strong> · Pre-launch project. Not a registered hosting provider yet.</p>
+      <p class="fine">Plans and prices shown are targets. Cloudflare is a trademark of Cloudflare, Inc.; SevenHost is not affiliated with or endorsed by Cloudflare. <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script src="/config.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
